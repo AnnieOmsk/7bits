@@ -4,27 +4,9 @@ html {
 }
 
 body {
-    font-family: 'PTSansRegular';
+    font-family: arial;
     font-size: 14px;
-}
-
-html {
-    background: url(../images/right_b_bg.jpg) no-repeat 100% 100%;
-}
-
-@font-face {
-    font-family: 'PTSansRegular';
-    src: url('../font/PTS55F-webfont.eot');
-    src: url('../font/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/PTS55F-webfont.woff') format('woff'),
-         url('../font/PTS55F-webfont.ttf') format('truetype'),
-         url('../font/PTS55F-webfont.svg#PTSansRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-p {
-    margin-bottom: 20px;
+    background: url(../images/patt.png);
 }
 
 .lang {
@@ -43,28 +25,31 @@ p {
 }
 
 .wrap {
-    padding: 220px 0 0;
     position: relative;
     margin: auto;
     width: 850px;
 }
 
 .header {
-    margin: 0 0 0 -320px;
-    padding: 50px 0 0 325px;
-    background: url(../images/left_t_bg.jpg) no-repeat 0 0;
-    height: 481px;
-    width: 580px;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
+    height: 200px;
+    width: 100%;
 }
 
 .logo {
-    float: left;
+    position: absolute;
+    left: 0;
+    top: 45px;
     width: 253px;
     height: 93px;
     background: url(../images/logo.png) no-repeat;
+}
+
+.contacts {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    color: #393738;
 }
 
 a {
@@ -78,67 +63,46 @@ a:hover {
 .content {
     position: relative;
     margin: 0 0 50px;
-    padding: 15px 10px 5px;
+    color: #201e1e;
     font-size: 25px;
-    line-height: 26px;
-    color: #201e1e;
-    font-family: 'PTSansRegular';
-    -moz-box-shadow: 1px 1px 16px rgba(153, 0, 51, .3);
-    -webkit-box-shadow: 1px 1px 16px rgba(153, 0, 51, .3);
-    box-shadow: 1px 1px 16px rgba(153, 0, 51, .3);
-    background: #fff;
-    z-index: 1;
 }
 
-.technologies {
-    position: relative;
-    z-index: 1;
+.content h2,
+.content h3 {
+    margin: 25px 0 0;
 }
 
-.footer-box {
-    margin: 0 20px 0 0;
-    float: left;
-    width: 240px; 
+.content h1 {
+    font-size: 30px;
 }
 
-.footer-box h2 {
-    margin: 0 0 15px;
-    font-size: 17px;
-    color: #201e1e;
-    font-weight: normal;
-    font-family: Georgia;
+.content h2 {
+    font-size: 30px;
 }
 
-.tools-list li {
-    margin: 0 0 5px;
+.content h3 {
+    font-size: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.content ul {
+    margin: 0 0 0 15px;
+}
+
+.content ul li {
     padding: 0 0 0 15px;
-    background: url(../images/bullet.png) 0 3px no-repeat;
-    color: #373435;
-}
-
-.tools-list li .price {
-    font-weight: bold;
-}
-
-.price-box {
-    float: right;
-    margin: -10px 0 0;    
-}
-
-.price-list {
-    padding: 10px;
-    background: #fafafa;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.cost-list li {
-    background: url(../images/line_main_page_list.png) no-repeat 0 5px;
+    margin: 0 0 5px;
+    background: url(../images/line_main_page_list.png) no-repeat 0 8px;
+    font-size: 14px;
 }
 
 .contacts-list {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
     color: #393738;
 }
 
@@ -149,4 +113,63 @@ a:hover {
 .contacts-list li b {
     font-weight: normal;
     color: #4b4b4d;
+}
+
+.footer {
+    margin: 100px 0 0;
+}
+
+.like-list {
+    text-align: center;
+}
+
+.like-list li {
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+.like-list li:first-child {
+    margin: 0;
+}
+
+*:first-child+html .like-list li {
+    display: inline;
+}
+
+.like-list li a {
+    display: block;
+    width: 25px;
+    height: 26px;
+    background: url(../images/likes.png) no-repeat;
+    text-decoration: none;
+}
+
+.like-list li.twitter a {
+    background-position: 0 0;
+}
+
+.like-list li.twitter a:hover {
+    background-position: -25px 0;
+}
+
+.like-list li.facebook a {
+    background-position: 0 -26px;
+}
+
+.like-list li.facebook a:hover {
+    background-position: -25px -26px;
+}
+
+.like-list li.in a {
+    background-position: 0 -104px;
+}
+
+.like-list li.in a:hover {
+    background-position: -25px -104px;
+}
+
+.copy {
+    margin: 10px 0;
+    color: gray;
+    text-align: center;
 }
