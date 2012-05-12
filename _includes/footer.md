@@ -11,14 +11,8 @@
     </script>
     <div class="fb-like" data-href="http://7bits.it" data-send="true" data-width="450" data-show-faces="true"></div>
     <ul class="like-list">
-        <li class="twitter">
-            <a href="#"></a>
-        </li>
-        <li class="facebook">
-            <a href="#"></a>
-        </li>
         <li class="in">
-            <a href="#"></a>
+            <a href="http://www.linkedin.com/company/7bits"></a>
         </li>
     </ul>
     <p class="copy">
