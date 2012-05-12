@@ -1,46 +1,46 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>7bits &raquo; {{ page.title }}</title>
-        <meta name="description" content="">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript">
+  <head>
+    <meta charset="utf-8">
+    <title>7bits &raquo; {{ page.title }}</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript">
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-103317-9']);
-          _gaq.push(['_trackPageview']);
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-103317-9']);
+      _gaq.push(['_trackPageview']);
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="wrap">
-                <div class="header clearfix">
-                  <a class="logo"></a>
-                </div>
-                <div class="content">
-                  {{ content }}
-                </div>
-
-                <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                  var js, fjs = d.getElementsByTagName(s)[0];
-                  if (d.getElementById(id)) return;
-                  js = d.createElement(s); js.id = id;
-                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215251065204031";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-                <br/><br/><br/><br/><br/><br/>
-                <div class="fb-like" data-href="http://7bits.it" data-send="true" data-width="450" data-show-faces="true"></div>
-            </div>
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrap">
+        <div class="header clearfix">
+          <a class="logo"></a>
         </div>
-    </body>
+        <div class="content">
+          {{ content }}
+        </div>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215251065204031";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <br/><br/><br/><br/><br/><br/>
+        <div class="fb-like" data-href="http://7bits.it" data-send="true" data-width="450" data-show-faces="true"></div>
+      </div>
+    </div>
+  </body>
 </html>
