@@ -68,11 +68,10 @@
                 </article>
             </div>
         </div>
-        <div>
+        <div class="about-article">
             <article class="max-width">
-                <h2>Компания «7bits»</h2>
                 <p>
-                    7bits - компания, помогающая клиентам добиваться своих целей. Наши клиенты обычно имеют свой сложившийся бизнес и хотят вывести его на новый уровень за счет автоматизации какой-то его части, либо опробовать новую идею на практике.
+                    <dfn>7bits</dfn> — компания, помогающая клиентам добиваться своих целей. Наши клиенты обычно имеют свой сложившийся бизнес и хотят вывести его на новый уровень за счет автоматизации какой-то его части, либо опробовать новую идею на практике.
                 </p>
                 <p>
                     Наша стезя — веб-разработка. Мы умеем ее хорошо и по-разному.
@@ -103,7 +102,7 @@
     </section>
 
     <footer>
-        <div class="max-width">
+        <div class="footer max-width clearfix">
             <div class="right-panel">
                 <div class="sns-btns">
                     <a class="tw" href="#">Twitter</a>
@@ -113,6 +112,14 @@
                 <p>2012 @ 7bits</p>
             </div>
 
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215251065204031";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://7bits.it" data-send="true" data-width="450" data-show-faces="true"></div>
         </div>
     </footer>
 
