@@ -240,6 +240,7 @@ header {
     margin: 0;
 }
 
+
 .contacts {
     float: right;
     font-size: 14px;
@@ -266,7 +267,40 @@ header {
 }
 
 
+.main-sub-article {
+    background: #eff5ff;
+}
+.main-sub-article article {
+    width: 33.3%;
+    float: left;
 
+    color: #103556;
+    font-size: 16px;
+}
+.main-sub-article article h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.main-sub-article article h2 a {
+    color: #103556;
+}
+.main-sub-article article p {
+    margin-top: 0;
+}
+
+
+.main-sub-article ul {
+    margin: 0;
+    padding: 0;
+}
+.main-sub-article ul li {
+    display: block;
+}
+
+
+footer {
+    background: #eee;
+}
 
 
 
