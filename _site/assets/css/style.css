@@ -42,8 +42,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #f57e88; color: #fff; text-shadow: none; }
+::selection { background: #f57e88; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -231,7 +231,17 @@ td { vertical-align: top; }
 header {
     height: 115px;
 
-    background: #eee;
+    background-color: #eee;
+    *background-color: #eee;
+    background-image:     -ms-linear-gradient(top, #ddd, #eee);
+    background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#eee));
+    background-image: -webkit-linear-gradient(top, #ddd, #eee);
+    background-image:      -o-linear-gradient(top, #ddd, #eee);
+    background-image:         linear-gradient(top, #ddd, #eee);
+    background-image:    -moz-linear-gradient(top, #ddd, #eee);
+    background-repeat: repeat-x;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ddd', endColorstr='#eee', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
 }
 
 .logo {
@@ -264,6 +274,33 @@ header {
 }
 .contacts a {
     color: #0299d6;
+}
+
+
+.main-article {
+    height: 500px;
+    background: url(../images/main-article.png) no-repeat 11% 17px;
+}
+.main-article h2 {
+    width: 594px;
+    height: 0;
+    margin: 14px 0 0;
+
+    color: #042d52;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: normal;
+    font-family: 'Lobster', cursive;
+}
+
+.main-article p {
+    width: 280px;
+    float: right;
+    clear: both;
+    margin: 14px 0 9px;
+
+    font-size: 20px;
+    line-height: 26px;
 }
 
 
@@ -300,6 +337,34 @@ header {
 
 footer {
     background: #eee;
+}
+footer .right-panel {
+    float: right;
+    text-align: right;
+}
+footer .sns-btns a {
+    display: inline-block;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    text-indent: 999px;
+    background: url(../images/sns-icons.png);
+    opacity: .6;
+}
+footer .sns-btns a:hover {
+    opacity: 1;
+}
+
+footer .sns-btns a.fb {
+    background-position-x: -24px;
+}
+footer .sns-btns a.li {
+    background-position-x: -48px;
+}
+
+footer .right-panel p {
+    color: #999;
+    font-size: 14px;
 }
 
 
