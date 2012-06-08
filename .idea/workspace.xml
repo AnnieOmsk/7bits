@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ea46c7d-ffda-4127-b408-33c58bc9fb8f" name="Default" comment=".idea file has been removed.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/main-article.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_site/assets/images/sns-icons.png" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_site/assets/images/likes.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/assets/css/style.css" afterPath="$PROJECT_DIR$/_site/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -565,7 +560,15 @@
       <created>1339128896448</created>
       <updated>1339128896448</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".idea files were removed from repository.">
+      <created>1339140583590</created>
+      <updated>1339140583590</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Markup has been improved.">
+      <created>1339140598783</created>
+      <updated>1339140598783</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -649,6 +652,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="IDEA project has been improved and added to git-ignore." />
+    <MESSAGE value=".idea files were removed from repository." />
     <MESSAGE value="Markup has been improved." />
   </component>
   <component name="VssConfiguration">
@@ -687,6 +691,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/education.md">
