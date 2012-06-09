@@ -223,8 +223,9 @@ td { vertical-align: top; }
 
 
 .max-width {
-    width: 900px;
+    width: 930px;
     margin: auto;
+    /*padding: 0 15px;*/
 }
 
 
@@ -242,6 +243,8 @@ header {
     background-repeat: repeat-x;
     filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ddd', endColorstr='#eee', GradientType=0);
     filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+
+    border-bottom: 1px solid #d2d2d2;
 }
 
 .logo {
@@ -281,8 +284,11 @@ header {
 
 
 .main-article {
+    border-bottom: 1px solid #ddd;
+}
+.main-article div {
     height: 500px;
-    background: url(../images/main-article.png) no-repeat 11% 17px;
+    background: url(../images/main-article.png) no-repeat 50% 17px;
 }
 .main-article h2 {
     width: 594px;
@@ -308,7 +314,10 @@ header {
 
 
 .main-sub-article {
-    background: #eff5ff;
+    padding: 9px 0 15px;
+    background: #eee;
+    border-top:    1px solid #fff;
+    border-bottom: 1px solid #c6d1d9;
 }
 .main-sub-article article {
     width: 33.3%;
@@ -322,10 +331,13 @@ header {
     font-size: 20px;
 }
 .main-sub-article article h2 a {
-    color: #103556;
+    color: #3673b8;
 }
 .main-sub-article article p {
     margin-top: 0;
+}
+.main-sub-article article p a {
+    color: #0bf;
 }
 
 
@@ -335,11 +347,35 @@ header {
 }
 .main-sub-article ul li {
     display: block;
+    margin: 0 0 9px;
+}
+.main-sub-article ul li a {
+    display: block;
+    overflow: hidden;
+    width: 130px;
+    height: 50px;
+}
+
+.js .main-sub-article ul li a:hover img {
+    margin: -50px 0 0;
 }
 
 
 .about-article {
-    padding: 18px 0;
+    padding: 22px 0 36px;
+    background: #dbe5ec;
+    border-top: 1px solid #f3f6f9;
+    border-bottom: 1px solid #bacedc;
+
+    font-size: 16px;
+}
+.about-article article {
+    -moz-column-count: 2;
+    -moz-column-gap: 44px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 44px;
+    column-count: 2;
+    column-gap: 44px;
 }
 .about-article dfn {
     display: inline-block;
@@ -353,6 +389,7 @@ header {
 
 footer {
     background: #eee;
+    border-top: 1px solid #fff;
 }
 .footer {
     padding: 20px 0 9px;
