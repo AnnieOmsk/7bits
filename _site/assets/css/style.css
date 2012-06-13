@@ -469,10 +469,10 @@ footer .sns-btns a:hover {
 }
 
 footer .sns-btns a.fb {
-    background-position-x: -24px;
+    background-position: -24px 0;
 }
 footer .sns-btns a.li {
-    background-position-x: -48px;
+    background-position: -48px 0;
 }
 
 footer .right-panel p {
