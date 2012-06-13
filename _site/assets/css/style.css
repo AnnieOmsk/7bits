@@ -230,7 +230,7 @@ td { vertical-align: top; }
 
 
 header {
-    height: 115px;
+    height: 77px;
 
     background-color: #eee;
     *background-color: #eee;
@@ -246,11 +246,21 @@ header {
 
     border-bottom: 1px solid #d2d2d2;
 }
+.main-page header {
+    height: 115px;
+}
+
 
 .logo {
     position: absolute;
     top: 9px;
     margin: 0;
+}
+.logo img {
+    width: 159px;
+}
+.main-page .logo img {
+    width: auto;
 }
 
 
@@ -287,6 +297,23 @@ header {
 .contacts ul a:hover {
     color: #16a;
 }
+
+
+header nav {
+    padding: 25px 0 0 99px;
+    text-align: center;
+}
+header nav li {
+    display: inline-block;
+    margin: 0 5px;
+}
+header nav li a {
+    color: #062a49;
+    font-size: 18px;
+}
+
+
+
 
 
 .main-article {
@@ -388,9 +415,11 @@ header {
 }
 
 
+
 .about-article {
     padding: 22px 0 36px;
-    background: #dbe5ec;
+    background: #dbe5ec url(../images/logo-bg.png) no-repeat center 72%;
+
     border-top: 1px solid #f3f6f9;
     border-bottom: 1px solid #bacedc;
 
