@@ -5,11 +5,11 @@
         <ul class="contacts-list">
             <li>
                 <b>Email:</b>
-                <a href="mailto:7bits@mail.ru">7bits@mail.ru</a>
+                <a href="mailto:aloha@7bits.it">aloha@7bits.it</a>
             </li>
             <li>
                 <b>Skype:</b>
-                <a href="skype:seven.bits?chat">seven.bits</a>
+                <a href="skype:anna_tarasenko?chat">Anna Tarasenko</a>
             </li>
             <li>
                 <b>Тел:</b> +7 (909) 535-00-73
