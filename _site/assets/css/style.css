@@ -300,19 +300,25 @@ header {
 
 
 header nav {
-    padding: 25px 0 0 99px;
+    float: right;
+    padding: 25px 0 0 0;
     text-align: center;
 }
+
 header nav li {
     display: inline-block;
     margin: 0 5px;
 }
+
 header nav li a {
     color: #062a49;
     font-size: 18px;
 }
 
-
+header nav li.active span {
+    color: #212121;
+    font-size: 18px;
+}
 
 
 
@@ -323,7 +329,8 @@ header nav li a {
     height: 500px;
     background: url(../images/main-article.png) no-repeat 50% 17px;
 }
-.main-article h2 {
+.main-article h2,
+.main-article h1 {
     width: 594px;
     height: 0;
     margin: 14px 0 0;
@@ -481,7 +488,128 @@ footer .right-panel p {
 }
 
 
+.center-position {
+    text-align: center;
+}
 
+/* Pages */
+
+.page-article h1 {
+    width: 594px;
+    margin: 14px 0 0;
+
+    color: #042d52;
+    font-size: 48px;
+    line-height: 55px;
+    font-weight: normal;
+    font-family: 'Lobster', cursive;
+}
+
+/* For friends */
+
+.for-friends-page .page-article {
+    float: left;
+    width: 490px;
+}
+
+.for-friends-page .page-article h1 span {
+    font-size: 46px;
+}
+
+.for-friends-page .events {
+    float: right;
+    width: 350px;
+}
+
+.for-friends-page .events h1 a {
+    font-weight: normal;
+    color: #598f21;
+    font-size: 24px;
+}
+
+.for-friends-page .events h1 a:hover {
+    color: #9ece6b;
+}
+
+.for-friends-page .events-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.for-friends-page .events-list li {
+    margin: 0 0 30px;
+}
+
+.for-friends-page .events-list time {
+    width: 57px;
+    height: 50px;
+    float: left;
+    margin: 0 15px 0 0;
+    background: url(../images/date-bg.png) no-repeat;
+    text-align: center;
+}
+
+.for-friends-page .events-list time i.date {
+    display: block;
+    color: #103556;
+    font-style: normal;
+    line-height: 35px;
+    font-size: 31px;
+}
+
+.for-friends-page .events-list time b.month {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+    line-height: 13px;
+    font-size: 12px;
+}
+
+.event-desc {
+    float: right;
+    width: 275px;
+    line-height: 20px;
+}
+
+.event-desc a {
+    color: #1f1f1f;
+    font-size: 16px;
+}
+
+.event-desc a:hover {
+    color: #224499;
+}
+
+.event-author {
+    display: block;
+    margin: 6px 0 0;
+    color: #575757;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.event-author dt,
+.event-author dd {
+    display: inline;
+}
+
+.event-author dd {
+    margin: 0 0 0 5px;
+    color: #1f1f1f;
+}
+
+.all-events {
+    text-align: right;
+}
+
+.all-events a {
+    color: #00BBFF;
+}
+
+.all-events a:hover {
+    color: #3377BB;
+}
 
 
 /* ==|== media queries ======================================================
