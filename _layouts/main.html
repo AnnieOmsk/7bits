@@ -37,7 +37,35 @@
 
 {{ content }}
 
-{% include footer.html %}
+<footer>
+    <div class="footer max-width clearfix">
+        <div class="right-panel">
+            <p>&copy; 2010&ndash;2012&nbsp; 7bits</p>
+            <div class="sns-btns">
+                <a class="tw" href="#">Twitter</a>
+                <a class="fb" href="#">Facebook</a>
+                <a class="li" href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="left-panel">
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215251065204031";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="http://7bits.it" data-send="true" data-width="450" data-show-faces="true"></div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var _gaq=[['_setAccount','UA-103317-9'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
 </body>
 </html>
