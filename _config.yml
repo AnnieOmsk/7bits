@@ -8,13 +8,13 @@ exclude:
 
 nav:
   - name:   Портфолио
-    url:    /portfolio
+    url:    /null
 
   - name:   Студентам и школьникам
     url:    /null
 
   - name:   Для друзей
-    url:    /for-friends
+    url:    /for-friends.html
 
   - name:   Связаться с нами
-    url:    /
+    url:    /null
