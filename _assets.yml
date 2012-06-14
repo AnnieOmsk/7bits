@@ -1,0 +1,6 @@
+compress_assets:        off
+gzip_assets:            on
+
+stylesheets:
+  style:
+    - _site/assets/css/*.css

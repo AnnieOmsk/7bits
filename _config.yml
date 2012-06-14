@@ -6,6 +6,9 @@ exclude:
   - 7bits.iml
   - nginx-configurations
 
+#jammit_base_dir: ./
+#jammit_output_dir: assets
+
 nav:
   - name:   Портфолио
     url:    /portpholio.html
