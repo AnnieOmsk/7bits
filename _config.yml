@@ -1,16 +1,16 @@
-pygments:       true
 permalink:      /:categories/:title/
-paginate:       5
+
+exclude:
+    - README.md
+    - markup
+    - 7bits.imi
 
 nav:
-    - name:     For friends
+    - name:     Для друзей
       url:      /for-friends
 
     - name:     Portfolio
-      url:      /portfolio/
+      url:      /null/
 
     - name:     About
-      url:      /about/
-      subnav:
-        - name: Contact
-          url:  mailto:scott-at-dotcom-after-appden
+      url:      /null/
