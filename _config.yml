@@ -3,7 +3,7 @@ permalink:      /:categories/:title/
 exclude:
     - README.md
     - markup
-    - 7bits.imi
+    - 7bits.iml
 
 nav:
     - name:     Для друзей
