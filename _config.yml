@@ -1,16 +1,20 @@
 permalink:      /:categories/:title/
 
 exclude:
-    - README.md
-    - markup
-    - 7bits.iml
+  - README.md
+  - markup
+  - 7bits.iml
+  - nginx-configurations
 
 nav:
-    - name:     Для друзей
-      url:      /for-friends
+  - name:   Портфолио
+    url:    /null
 
-    - name:     Portfolio
-      url:      /null/
+  - name:   Студентам и школьникам
+    url:    /null
 
-    - name:     About
-      url:      /null/
+  - name:   Для друзей
+    url:    /for-friends.html
+
+  - name:   Связаться с нами
+    url:    /null
