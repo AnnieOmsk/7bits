@@ -330,6 +330,16 @@ header nav li a:visited:hover {
     border-bottom: 1px solid #e2e2e2;
 }
 
+.red-indent p,
+p.red-indent {
+    text-indent: 30px;
+}
+
+.red-indent p *,
+p.red-indent * {
+    text-indent: 0;
+}
+
 /* Footer */
 
 footer {
@@ -536,7 +546,6 @@ footer .right-panel p {
 }
 
 .page-article h1 {
-    width: 594px;
     margin: 14px 0 0;
 
     color: #042d52;
@@ -547,6 +556,10 @@ footer .right-panel p {
 }
 
 /* For friends */
+
+.for-friends-page h1 {
+    width: 594px;
+}
 
 .for-friends-page .page-article {
     float: left;
@@ -649,6 +662,37 @@ footer .right-panel p {
 }
 
 .all-events a:hover {
+    color: #3377BB;
+}
+
+/* For students and pupils page*/
+
+.for-students-page .page-article h1 {
+    margin-right: -18px;
+    text-align: center;
+}
+
+.for-students-page .page-article h1 span {
+    padding: 0 28px;
+    font-size: 45px;
+}
+
+.for-students-box {
+    float: left;
+    width: 420px;
+    margin: 0 20px 0 0;
+}
+
+.for-pupils-box {
+    float: right;
+    width: 440px;
+}
+
+.students-pupils-box p a {
+    color: #00BBFF;
+}
+
+.students-pupils-box p a:hover {
     color: #3377BB;
 }
 
