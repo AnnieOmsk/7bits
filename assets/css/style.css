@@ -219,7 +219,9 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
-
+body {
+    font-family: Helvetica, Arial;
+}
 
 
 .max-width {
@@ -720,6 +722,10 @@ footer .right-panel p {
 .events-page hgroup h1 b {
     font-weight: normal;
     font-size: 35px;
+}
+
+.events-page hgroup {
+    margin: 30px 0 0;
 }
 
 .events-page hgroup h1 b a:hover {
