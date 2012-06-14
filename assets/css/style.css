@@ -375,10 +375,6 @@ footer {
     padding: 20px 0;
 }
 
-footer .left-panel {
-    margin: 10px 0 0;
-}
-
 footer .right-panel {
     float: right;
     text-align: right;
@@ -407,6 +403,7 @@ footer .sns-btns a.li {
 }
 
 footer .right-panel p {
+    margin-top: 0;
     color: #999;
     font-size: 14px;
 }
@@ -582,7 +579,7 @@ footer .right-panel p {
 }
 
 .for-friends-page .events h1 a:hover {
-    color: #9ece6b;
+    color: #7ac729;
 }
 
 .for-friends-page .events-list {
@@ -677,15 +674,17 @@ footer .right-panel p {
     font-size: 45px;
 }
 
+.for-students-box,
+.for-pupils-box {
+    width: 49%;
+}
+
 .for-students-box {
     float: left;
-    width: 420px;
-    margin: 0 20px 0 0;
 }
 
 .for-pupils-box {
     float: right;
-    width: 440px;
 }
 
 .students-pupils-box p a {
