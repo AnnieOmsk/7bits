@@ -1,0 +1,166 @@
+body
+  font-family: Helvetica, Arial
+
+.max-width
+  width: 930px
+  margin: auto
+
+/* Header */
+
+header 
+  height: 77px
+  background-color: #eee
+  *background-color: #eee
+  background-image:     -ms-linear-gradient(top, #ddd, #eee)
+  background-image:        -webkit-gradient(linear, 0 0, 0 100%, from(#ddd), to(#eee))
+  background-image: -webkit-linear-gradient(top, #ddd, #eee)
+  background-image:      -o-linear-gradient(top, #ddd, #eee)
+  background-image:         linear-gradient(top, #ddd, #eee)
+  background-image:    -moz-linear-gradient(top, #ddd, #eee)
+  background-repeat: repeat-x
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ddd', endColorstr='#eee', GradientType=0)
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+  border-bottom: 1px solid #d2d2d2
+  .logo
+    position: absolute
+    top: 9px
+    margin: 0
+    img
+      width: 159px
+  nav
+    float: right
+    padding: 25px 0 0 0
+    text-align: center
+    li
+      display: inline-block
+      margin: 0 5px
+      color: #212121
+      font-size: 18px
+      a,
+        &:visited
+          color: #062a49
+      a
+        font-size: 18px
+        &:hover,
+        &:visited:hover
+          color: #0066EE
+
+.main-page
+  header
+    height: 115px
+    .logo img
+      width: auto
+
+.contacts
+  float: right
+  font-size: 14px
+  h2
+    margin: 12px 0 5px
+    font-size: 16px
+    font-weight: normal
+    a
+      color: #042D52
+      &:hover
+        color: #35a
+  ul
+    margin: 0
+    padding: 0
+    li
+      display: block
+      margin: 0 0 2px
+      a
+        color: #0299d6
+        &:hover
+          color: #16a
+  b
+    color: #999
+    font-weight: normal
+
+.border-bottom-gray
+  border-bottom: 1px solid #e2e2e2
+
+
+.red-indent p,
+p.red-indent 
+  text-indent: 30px
+
+
+.red-indent p *,
+p.red-indent * 
+  text-indent: 0
+
+/* Footer */
+
+footer 
+  background-color: #f1f1f1
+  *background-color: #f1f1f1
+  background-image: -ms-linear-gradient(top, #f1f1f1, #d4d4d4)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4))
+  background-image: -webkit-linear-gradient(top, #f1f1f1, #d4d4d4)
+  background-image: -o-linear-gradient(top, #f1f1f1, #d4d4d4)
+  background-image: linear-gradient(top, #f1f1f1, #d4d4d4)
+  background-image: -moz-linear-gradient(top, #f1f1f1, #d4d4d4)
+  background-repeat: repeat-x
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#d4d4d4', GradientType=0)
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+  border-top: 1px solid #fff
+  .footer
+    padding: 20px 0
+    .left-panel
+      float: left
+      .sns-btns
+        a, b
+          display: inline-block
+          vertical-align: middle
+        b
+          color: #999
+          font-weight: normal
+          font-size: 14px
+        a
+          overflow: hidden
+          width: 24px
+          height: 24px
+          text-indent: 999px
+          background: url(../images/sns-icons.png)
+          opacity: .6
+          filter: alpha(opacity=60)
+          &:hover
+            opacity: 1
+          &.fb
+            background-position: -24px 0
+          &.li
+            background-position: -48px 0
+    .right-panel
+      float: right
+      text-align: right
+      p
+        margin-top: 0
+        color: #999
+        font-size: 14px
+
+
+.page footer 
+  background-color: #f1f1f1
+  *background-color: #f1f1f1
+  background-image: -ms-linear-gradient(top, #f9f9f9, #ffffff)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#ffffff))
+  background-image: -webkit-linear-gradient(top, #f9f9f9, #ffffff)
+  background-image: -o-linear-gradient(top, #f9f9f9, #ffffff)
+  background-image: linear-gradient(top, #f9f9f9, #ffffff)
+  background-image: -moz-linear-gradient(top, #f9f9f9, #ffffff)
+  background-repeat: repeat-x
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#ffffff', GradientType=0)
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false)
+
+/* Pages */
+
+.center-position 
+  text-align: center
+
+.page-article h1 
+  margin: 14px 0 0
+  color: #042d52
+  font-size: 48px
+  line-height: 55px
+  font-weight: normal
+  font-family: 'Lobster', times

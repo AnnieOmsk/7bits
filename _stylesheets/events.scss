@@ -1,0 +1,109 @@
+/* Events */
+
+.events-page hgroup h1 {
+  margin: 14px 0 0;
+
+  color: #042d52;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: normal;
+  font-family: 'Lobster', times;
+  text-align: center;
+}
+
+.events-page hgroup h1 span {
+  color: #acadad;
+}
+
+.events-page hgroup h1 b,
+.events-page hgroup h1 b a {
+  color: #acadad;
+}
+
+.events-page hgroup h1 b {
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.events-page hgroup {
+  margin: 30px 0 0;
+}
+
+.events-page hgroup h1 b a:hover {
+  color: #818282;
+}
+
+.events-page h2 {
+  padding: 0 0 0 72px;
+  background: #f3f3f3;
+  font-weight: normal;
+  color: #5976b7;
+  font-size: 34px;
+}
+
+.events-page .events-list {
+  margin: 0 0 50px;
+  padding: 0;
+  list-style: none;
+}
+
+.events-page .events-list li {
+  margin: 0 0 30px;
+}
+
+.events-page .events-list time {
+  width: 57px;
+  height: 50px;
+  float: left;
+  margin: 0 15px 0 0;
+  background: url(../images/date-bg.png) no-repeat;
+  text-align: center;
+}
+
+.events-page .events-list time i.date {
+  display: block;
+  color: #103556;
+  font-style: normal;
+  line-height: 35px;
+  font-size: 31px;
+}
+
+.events-page .events-list time b.month {
+  display: block;
+  color: #fff;
+  font-weight: normal;
+  line-height: 13px;
+  font-size: 12px;
+}
+
+.events-page .events-list .event-desc {
+  float: left;
+  line-height: 20px;
+}
+
+.events-page .event-desc a {
+  color: #1f1f1f;
+  font-size: 16px;
+}
+
+.events-page .event-desc a:hover {
+  color: #224499;
+}
+
+.events-page .event-author {
+  display: block;
+  margin: 6px 0 0;
+  color: #575757;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.events-page .event-author dt,
+.events-page .event-author dd {
+  display: inline;
+}
+
+.events-page .event-author dd {
+  margin: 0 0 0 5px;
+  color: #1f1f1f;
+}
