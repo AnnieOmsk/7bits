@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+    <meta charset="utf-8">
+
+    <title>{{ page.title }}</title>
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        {% if page.keywords %}
+            <meta name="keywords" content="{{ page.keywords }}">
+        {% endif %}
+    {% endif %}
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic">
+
+    <script src="assets/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body class="page">
