@@ -124,18 +124,22 @@ footer
           font-size: 14px
         a
           overflow: hidden
-          width: 24px
-          height: 24px
+          width: 25px
+          height: 25px
           text-indent: 999px
-          background: url(../images/sns-icons.png)
-          opacity: .6
-          filter: alpha(opacity=60)
-          &:hover
-            opacity: 1
+          background: url(../images/likes.png)
+          &.tw
+            background-position: 0 0
+            &:hover
+              background-position: -25px 0
           &.fb
-            background-position: -24px 0
+            background-position: 0 -27px
+            &:hover
+              background-position: -25px -27px
           &.li
-            background-position: -48px 0
+            background-position: 0 -235px
+            &:hover
+              background-position: -25px -235px
     .right-panel
       float: right
       text-align: right
@@ -143,8 +147,6 @@ footer
         margin-top: 0
         color: #999
         font-size: 14px
-
-
 
 .footer-page
   margin: 20px 0 0
