@@ -1,0 +1,240 @@
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Car service center search</title>
+  <meta name="description" content="">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="css/h5bp/begin.css">
+    <link rel="stylesheet" href="css/lib/jquery.mobile-1.1.0.min.css">
+    <link rel="stylesheet" href="css/lib/jquery.mobile.simpledialog.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jqm.css">
+    <link rel="stylesheet" href="css/h5bp/end.css">
+
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="css/jqm-ie.css">
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+<div data-role="page" class="page">
+<div class="toolbar-panel clearfix" data-role="header" data-position="fixed">
+    <div class="toolbar-wrapper">
+        <div class="logo-small ui-bar-a">
+            <a class="menu-link" href="#"></a>
+            <div class="menu-panel">
+                <span class="corner"></span>
+                <h3>John Smith</h3>
+                <a href="#" class="nav-link-logout menu-link demo" data-role="button" data-theme="b">Logout</a>
+                <a href="#" class="nav-link-search menu-link demo" data-role="button" data-theme="b">Search</a>
+                <a href="#" class="wait menu-link demo" data-role="button" data-theme="b">About</a>
+                <fieldset data-role="controlgroup" class="choose-devices" id="choose-ui-version" >
+                    <legend>Interface version:</legend>
+
+                    <input type="radio" name="devices" id="android" data-theme="f" class="demo"/>
+                    <label for="android">Android</label>
+
+                    <input type="radio" name="devices" id="ipad" data-theme="f"/>
+                    <label for="ipad">iPad</label>
+
+                    <input type="radio" name="devices" id="other" checked="checked" data-theme="f"/>
+                    <label for="other">other</label>
+
+                </fieldset>
+            </div>
+        </div>
+      <div class="toolbar" data-role="header">
+        <h1>Car service center search</h1>
+        <div class="ui-btn-left">
+          <a href="#" data-role="button" data-icon="delete" data-theme="f" class="logout clear">Clear</a>
+        </div>
+        <div class="ui-btn-right">
+            <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right" name="next" data-theme="b" class="demo">Next</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-role="content" class="content content-m">
+    <form action="#" class="play-form" style="margin-top: 30px;">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active ui-state-persist extended-search ">Advanced search</a></li>
+                <li><a href="#" class="simple-search">Search by name</a></li>
+            </ul>
+        </div>
+        <div class="subform">
+            <div class="frame-box form-control">
+                <legend>
+                    Location
+                </legend>
+                <div class="fieldset-box">
+                    <div data-role="fieldcontain">
+                        <label for="expired-date" class="ui-select">City:</label>
+                        <div class="field-wrap max-length-largest form-control">
+                            <input type="text" name="expired-date" id="expired-date" value=""/>
+                        </div>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="expired-date1" class="ui-select">Street:</label>
+                        <div class="field-wrap max-length-largest form-control">
+                            <input type="text" name="expired-date" id="expired-date1" value=""/>
+                        </div>
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="name-ownship">Area:</label>
+                        <div class="field-wrap">
+                            <input type="text" name="expired-date" id="name-ownship" value=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="pay-percentage">With official site:</label>
+                <div class="field-wrap">
+                    <select name="slider" id="pay-percentage" data-role="slider">
+                        <option value="on">Yes</option>
+                        <option value="off">No</option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="fieldcontain" class="link-control link-control-wrap">
+                <label>Car:</label>
+                <div class="field-wrap">
+                    <div class="field-wrap max-length-small form-control">
+                        <input type="text" name="name" autocorrect="off" spellcheck="false" value="" placeholder="begin type Mazda"/>
+                    </div>
+                    <div class="button-all">
+                        <a href="demo-list.html" data-role="button" data-inline="true" data-icon="list" data-iconpos="right" class="button-without-text">Full list</a>
+                    </div>
+                </div>
+                <div class="search-results-box">
+
+                </div>
+            </div>
+
+            <div data-role="fieldcontain">
+                <label for="pay-percentage">Twenty-four-hour:</label>
+                <div class="field-wrap">
+                    <select name="slider" id="pay-percentage" data-role="slider">
+                        <option value="on">Yes</option>
+                        <option value="off">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix" data-role="fieldcontain">
+                <label for="document" class="select">Type of work:</label>
+                <div class="field-wrap">
+                    <select name="document" id="document">
+                        <option value="1">Maintenance works</option>
+                        <option value="2">Minor and major services</option>
+                        <option value="3">Full diagnostics</option>
+                        <option value="4">Clutch and gearbox repair</option>
+                        <option value="5">Suspension testing</option>
+                        <option value="6">Other</option>
+                   </select>
+                </div>
+            </div>
+        </div>
+        <div class="subform" style="display: none">
+            <div data-role="fieldcontain">
+                <label for="expired-date" class="ui-select">Name:</label>
+                <div class="field-wrap max-length-largest form-control">
+                    <input type="text" name="expired-date" id="expired-date" value=""/>
+                </div>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="js/helper.js"></script>
+
+<script src="js/lib/jquery.mobile-1.1.0.min.js"></script>
+<script src="js/libs/jquery.mobile.simpledialog2.js"></script>
+<script src="js/libs/jquery.fixedMenu.js"></script>
+<script src="js/demo-dialog.js"></script>
+<script src="js/dropdown_run.js"></script>
+<script src="js/plugins.js"></script>
+
+<script src="js/loading-msg.js"></script>
+<script>
+    $('.simple-search, .extended-search').live('click', function() {
+        $('.subform').toggle();
+    })
+    $('.clear').live('click', function() {
+        $('input').val("");
+    })
+</script>
+<script>
+
+    var timeout_id;
+    $('.link-control-wrap input').keyup(function(e) {
+
+        if (timeout_id) {
+            clearTimeout(timeout_id);
+        }
+
+        timeout_id = setTimeout(function() {
+
+            var mazda = "mazda";
+            if (mazda.indexOf($('.link-control-wrap input').val().toLowerCase()) >= 0){
+
+                $('.search-results-box').html(
+                    '<ul data-role="listview" data-inset="true" data-split-theme="d" class="search-results-list search-results-list-control">'+
+                                            '<li data-icon="check">'+
+                                                '<a href="#">'+
+                                                    '<div class="users-data">'+
+                                                        '<h6>Mazda</h6>'+
+                                                        '<dl>'+
+                                                            '<dt>CX7</dt>'+
+                                                        '</dl>'+
+                                                    '</div>'+
+                                                '</a>'+
+                                            '</li>'+
+                                            '<li data-icon="check">'+
+                                                '<a href="#">'+
+                                                    '<div class="users-data">'+
+                                                        '<h6>Mazda</h6>'+
+                                                        '<dl>'+
+                                                            '<dt>CX9</dt>'+
+                                                        '</dl>'+
+                                                    '</div>'+
+                                                '</a>'+
+                                            '</li>'+
+                                            '<li data-icon="check">'+
+                                                '<a href="#">'+
+                                                    '<div class="users-data">'+
+                                                        '<h6>Mazda</h6>'+
+                                                        '<dl>'+
+                                                            '<dt>Demio</dt>'+
+                                                        '</dl>'+
+                                                    '</div>'+
+                                                '</a>'+
+                                            '</li>'+
+                                        '</ul>');
+
+                $('.search-results-list').listview()
+            }
+        }, 1500);
+    });
+</script>
+</body>
+</html>
