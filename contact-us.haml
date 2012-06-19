@@ -1,0 +1,53 @@
+---
+layout: default
+title:  Контактная информация
+
+class:  contacts-page
+---
+
+.max-width
+  %article.page-article.clearfix
+    %hgroup>
+      %h1>
+        Контактная информация
+    .contacts-box
+      %ul.contacts-list
+        %li.email
+          %a{:href => 'mailto:aloha@7bits.it'}
+            %s
+            %i
+              aloha@7bits.it
+        %li.phone
+          %s
+          %i
+            +7 (909) 535-00-73
+        %li.skype
+          %a{:href => 'skype:anna_tarasenko?chat'}
+            %s
+            %i
+              Anna Tarasenko
+        %li.address
+          %s
+          %i
+            Россия, г. Омск, 644010, ул. Учебная 83а, офис 212.
+      .map
+        #ymaps-map-id_133999665283018323121.map-box
+    .contact-form-box
+      .contact-form-wrap
+        %h2
+          Есть вопрос?
+        %form.contacts-form{:action => '#'}
+          %label
+            %span
+              Ваш e-mail:
+            %input{:type => 'email'}
+          %label
+            %span
+              Как к Вам обращаться?
+            %input{:type => 'text'}
+          %label
+            %span
+              Ваш вопрос:
+            %textarea
+          %p.submit-button
+            %input{:type => 'submit', :value => 'Отправить'}
