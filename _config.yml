@@ -10,6 +10,8 @@ exclude:
 #jammit_output_dir: assets
 
 nav:
+  - name:   О нас
+    url:    /about-us.html
   - name:   Портфолио
     url:    /portpholio.html
 
