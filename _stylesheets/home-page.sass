@@ -30,12 +30,28 @@
 .main-sub-article
   border-top:    1px solid #fff
   border-bottom: 1px solid #c6d1d9
-  background: #EAEBFF
+  background: #e8e8e8
+  font-family: "PT Sans",sans-serif
   article
     width: 38%
     float: left
     color: #103556
     font-size: 16px
+  .contacts
+    width: 30%
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: block
+        margin: 0 0 2px
+        a
+          color: #0299d6
+          &:hover
+            color: #16a
+    b
+      color: #999
+      font-weight: normal
   .portfolio
     width: 23.9%
     a
@@ -43,6 +59,8 @@
       overflow: hidden
       width: 130px
       height: 50px
+  .friends-article
+    width: 45%
   h2
     margin-bottom: 5px
     font-size: 20px
@@ -73,3 +91,23 @@
 
 .main-sub-article-c
   padding: 11px 0 15px
+
+.about-article
+  padding: 22px 0 36px
+  background: #dbe5ec url(../images/logo-bg.png) no-repeat center 72%
+  border-top: 1px solid #f3f6f9
+  border-bottom: 1px solid #bacedc
+  font-size: 16px
+  article
+    -moz-column-count: 2
+    -moz-column-gap: 44px
+    -webkit-column-count: 2
+    -webkit-column-gap: 44px
+    column-count: 2
+    column-gap: 44px
+  dfn
+    display: inline-block
+    font-size: 28px
+    line-height: 14px
+    font-style: normal
+    font-weight: bold
