@@ -10,15 +10,12 @@ exclude:
 #jammit_output_dir: assets
 
 nav:
-  - name:   О нас
+  - name:   Кто мы
     url:    /about-us.html
   - name:   Портфолио
     url:
 
-  - name:   Студентам и школьникам
-    url:    /for-students.html
-
-  - name:   Для друзей
+  - name:   Друзьям и учащимся
     url:    /for-friends.html
 
   - name:   Связаться с нами

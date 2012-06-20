@@ -20,6 +20,29 @@ class:        main-page
         &mdash; Используем различные подходы и технологии.
   .main-sub-article
     .main-sub-article-c.max-width.clearfix
+      %article
+        %h2
+          %a{:href => 'about-us.html'} О компании
+        %p
+          7bits - компания, помогающая клиентам добиваться своих целей.
+        %p
+          Нам интересно заниматься задачами, где есть к чему приложить мозг.
+        .contacts
+          %h2
+            %a{:href => 'contact-us.html'} Контактная информация
+          %ul.contacts-list
+            %li
+              %b
+                Email:
+              %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
+            %li
+              %b
+                Skype:
+              %a{:href => 'skype:anna_tarasenko?chat'} Anna Tarasenko
+            %li
+              %b
+                Тел:
+              +7 (909) 535-00-73
       %article.portfolio
         %h2
           %a{:href => '#'} Портфолио
@@ -32,14 +55,11 @@ class:        main-page
                 %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
       %article
         %h2
-          %a{:href => 'for-friends.html'} Друзьям и коллегам
+          %a{:href => 'for-friends.html'} Друзья, коллегам и учащимся
         %p
           Проводим открытые мероприятия с докладами, с поеданием угощения и настольными играми.
         %p
-          %a{:href => 'events.html'} Архив мероприятий
-      %article
-        %h2
-          %a{:href => 'for-students.html'} Студентам и школьникам
+          %a.archieve{:href => 'events.html'} Архив мероприятий
         %p
           Спецкурсы «Современные практики разработки ПО» на базе ОмГУ для студентов.
         %p
