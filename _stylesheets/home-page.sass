@@ -98,12 +98,13 @@
   border-bottom: 1px solid #bacedc
   font-size: 16px
   article
-    -moz-column-count: 2
-    -moz-column-gap: 44px
-    -webkit-column-count: 2
-    -webkit-column-gap: 44px
-    column-count: 2
-    column-gap: 44px
+    .left-column,
+    .right-column
+      width: 46%
+    .left-column
+      float: left
+    .right-column
+      float: right
   dfn
     display: inline-block
     font-size: 28px

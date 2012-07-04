@@ -11,7 +11,7 @@ exclude:
 
 nav:
   - name:   Портфолио
-    url:
+    url:    /portfolio.html
 
   - name:   Друзьям и учащимся
     url:    /for-friends.html
