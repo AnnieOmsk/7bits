@@ -11,10 +11,10 @@ exclude:
 
 nav:
   - name:   Портфолио
-    url:    /portfolio.html
+    url:    portfolio.html
 
   - name:   Друзьям и учащимся
-    url:    /for-friends.html
+    url:    for-friends.html
 
   - name:   Связаться с нами
-    url:    /contact-us.html
+    url:    contact-us.html
