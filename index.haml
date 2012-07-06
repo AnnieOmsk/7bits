@@ -47,7 +47,17 @@ class:        main-page
 
           #Оплачиваем стажировку
           Если у вас нет опыта, но есть базовые знания, горящие глаза и готовность пахать, чтобы оперативно обзавестись необходимыми навыками, мы возьмем вас на оплачиваемую двухмесячную стажировку.
-
+    .main-article-portfolio
+      %article.portfolio.max-width
+        :markdown
+          ##Портфолио
+        %ul.clearfix
+          %li
+            %a{:href => '#'}
+              %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
+          %li
+            %a{:href => 'http://mutualforce.com'}
+              %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
       / %p
       /   7bits — компания, помогающая клиентам добиваться своих целей. Наши клиенты обычно имеют свой сложившийся бизнес и
       /   хотят вывести его на новый уровень за счет автоматизации какой-то его части, либо опробовать новую идею на практике.
@@ -69,6 +79,8 @@ class:        main-page
       /   Мы не стремимся стать больше, мы стремимся стать лучше. Иногда для этого действительно приходится немного вырасти в размере, и мы готовы пойти на это,
       /   если вы поможете нам решать задачи наших клиентов.
 
+
+
   .main-sub-article
     .main-sub-article-c.max-width.clearfix
       %article.contacts
@@ -85,16 +97,7 @@ class:        main-page
             %b.icon-skype
             %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
 
-      / %article.portfolio
-      /   %h2
-      /     %a{:href => '#'} Портфолио
-      /     %ul
-      /       %li
-      /         %a{:href => '#'}
-      /           %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
-      /       %li
-      /         %a{:href => 'http://mutualforce.com'}
-      /           %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
+
       %article.friends-article
 
         :markdown
