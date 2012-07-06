@@ -43,15 +43,17 @@
       margin: 0
       padding: 0
       li
-        display: block
+        display: inline-block
         margin: 0 0 2px
         a
           color: #0299d6
           &:hover
             color: #16a
-    b
-      color: #999
-      font-weight: normal
+        b
+          color: #999
+          font-weight: normal
+        &:hover b
+          color: #666
   .friends-article
     width: 45+30%
   h2
@@ -102,6 +104,8 @@
   border-top: 1px solid #f3f6f9
   border-bottom: 1px solid #bacedc
   font-size: 16px
+  h2
+    font-size: 20px
   article
     .left-column,
     .right-column
