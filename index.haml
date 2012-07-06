@@ -10,23 +10,27 @@ class:        main-page
 %section
   / %article.main-article
   /   .max-width
+  /     %h2
+  /       Small but powerful
+  /     / %p
+  /     /   &mdash; Поможем реализовать новые идеи на практике.
+  /     / %p
+  /     /   &mdash; Оптимизируем ваши сайты под мобильные браузеры (iPhone, iPad, Galaxy Tab).
+  /     / %p
+  /     /   &mdash; Используем различные подходы и технологии.
   .about-article
     %article.max-width.clearfix
-      .left-column#about-company
-        :markdown
-          ##Чем занимаемся
-          Разрабатываем сложные веб-приложения<br/> на *Java*, *Grails* и *Ruby on Rails*. 
+      :markdown
+        ##Чем занимаемся
+        Разрабатываем сложные веб-приложения на *Java*, *Grails* и *Ruby on Rails*. 
 
-          Используем гибкие процессы и учимся принципам бережливого производства.
+        Используем гибкие процессы и учимся принципам бережливого производства.
 
-          Можем автоматизировать застрявшие в прошлом веке бизнес-процессы, разработать систему аналитики или прототип для проверки новой бизнес-идеи.
+        Можем автоматизировать застрявшие в прошлом веке бизнес-процессы, разработать систему аналитики или прототип для проверки новой бизнес-идеи.
 
-          Не делаем стандартные сайты-визитки, интернет-магазины и социальные сети.
+        Не делаем стандартные сайты-визитки, интернет-магазины и социальные сети.
 
-      .right-column
-        %br
-        %br
-        %img{:src => 'assets/images/main-bg.png'}
+
       / #additional-technologies
       /   :markdown
       /     Дополнительные: 
@@ -41,28 +45,20 @@ class:        main-page
         :markdown
           ##Проекты и клиенты
         %ul.clearfix
-          / %li
-          /   Рост-Медиа
-          / %li
-          /   Cellogic
-          / %li
-          /   NYSE
+          %li
+            Рост-Медиа
+          %li
+            %a{:href => '#'}
+              %img{:src => 'assets/images/portfolio/cellogic.png', :alt => 'Celllogic'}
+          %li
+            %a{:href => 'http://newyorkshopexchange.com'}
+              %img{:src => 'assets/images/portfolio/nyse.png', :alt => 'NYSE'}
           %li
             %a{:href => 'http://радиобиржа.рф'}
               %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
           %li
             %a{:href => 'http://mutualforce.com'}
               %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
-          %li
-            %a{:href => 'http://радиобиржа.рф'}
-              %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
-          %li
-            %a{:href => 'http://mutualforce.com'}
-              %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
-          %li
-            %a{:href => 'http://радиобиржа.рф'}
-              %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
-
 
 
 
@@ -77,30 +73,26 @@ class:        main-page
         :markdown
           ##Оплачиваем стажировку
           Если у вас нет опыта, но есть базовые знания, горящие глаза и готовность пахать, чтобы оперативно обзавестись необходимыми навыками, мы возьмем вас на оплачиваемую двухмесячную стажировку.
-
-  .main-sub-article
-    .main-sub-article-c.max-width.clearfix
-  
-      %article.contacts
-        %h2
-          %a{:href => 'contacts.html'} Контакты
-        %ul.contacts-list
-          %li
-            %b.icon-mobile-alt
-            +7 (909) 535-00-73
-          %li
-            %b.icon-mail-1
-            %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
-          %li
-            %b.icon-skype
-            %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
+      / %article.contacts
+      /   %h2
+      /     %a{:href => 'contacts.html'} Контакты
+      /   %ul.contacts-list
+      /     %li
+      /       %b.icon-mobile-alt
+      /       +7 (909) 535-00-73
+      /     %li
+      /       %b.icon-mail-1
+      /       %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
+      /     %li
+      /       %b.icon-skype
+      /       %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
 
 
-      %article.friends-article
+      / %article.friends-article
 
-        :markdown
-          ## Мероприятия
-          Постоянно [участвуем в различных мероприятиях](events.html) города и страны. Вот несколько последних:
+      /   :markdown
+      /     ## Мероприятия
+      /     Постоянно [участвуем в различных мероприятиях](events.html) города и страны. Вот несколько последних:
           
-          Есть интересная тема для доклада? [Расскажите нам о ней](mailto:aloha@7bits.it).
+      /     Есть интересная тема для доклада? [Расскажите нам о ней](mailto:aloha@7bits.it).
 
