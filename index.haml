@@ -73,37 +73,52 @@ class:        main-page
     .main-sub-article-c.max-width.clearfix
       %article.contacts
         %h2
-          %a{:href => 'contact-us.html'} Контактная информация
+          %a{:href => 'contacts.html'} Контакты
         %ul.contacts-list
+          %li
+            %b.icon-mobile-alt
+            +7 (909) 535-00-73
           %li
             %b.icon-mail-1
             %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
           %li
             %b.icon-skype
-            %a{:href => 'skype:anna_tarasenko?chat'} Anna Tarasenko
-          %li
-            %b.icon-mobile-alt
-            +7 (909) 535-00-73
-      %article.portfolio
-        %h2
-          %a{:href => '#'} Портфолио
-          %ul
-            %li
-              %a{:href => '#'}
-                %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
-            %li
-              %a{:href => 'http://mutualforce.com'}
-                %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
+            %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
+
+      / %article.portfolio
+      /   %h2
+      /     %a{:href => '#'} Портфолио
+      /     %ul
+      /       %li
+      /         %a{:href => '#'}
+      /           %img{:src => 'assets/images/portfolio/radioexchange.png', :alt => 'Mutual Force'}
+      /       %li
+      /         %a{:href => 'http://mutualforce.com'}
+      /           %img{:src => 'assets/images/portfolio/mutual-force.png', :alt => 'Радиобиржа'}
       %article.friends-article
-        %h2
-          %a{:href => 'for-friends.html'} Друзья, коллегам и учащимся
-        %p
-          Проводим открытые мероприятия с докладами, с поеданием угощения и настольными играми.
-        %p
-          %a.archieve{:href => 'events.html'} Архив мероприятий
-        %p
-          Спецкурсы «Современные практики разработки ПО» на базе ОмГУ для студентов.
-        %p
-          Принимаем участие в работе омской
-          %a{:href => '#'} Школы программиста
-          — занятия для учащихся 7-8 классов.
+
+        :markdown
+          ## Мероприятия
+          Постоянно [участвуем в различных мероприятиях](events.html) города и страны. Вот несколько последних:
+
+          * Онлайн-трансляция Google I/O
+          * [QASib в Омске](http://www.qasib.ru/2012/06/23-qasib.html)
+          * Первая встреча Omsk MongoDB User Group. Базовые знания
+          * День рождения 7bits
+          * [Омская хабравстреча](http://habrahabr.ru/events/726/)
+
+
+          
+          Есть интересная тема для доклада? [Расскажите нам о ней](mailto:aloha@7bits.it).
+        / %h2
+        /   %a{:href => 'for-friends.html'} Друзья, коллегам и учащимся
+        / %p
+        /   Проводим открытые мероприятия с докладами, с поеданием угощения и настольными играми.
+        / %p
+        /   %a.archieve{:href => 'events.html'} Архив мероприятий
+        / %p
+        /   Спецкурсы «Современные практики разработки ПО» на базе ОмГУ для студентов.
+        / %p
+        /   Принимаем участие в работе омской
+        /   %a{:href => '#'} Школы программиста
+        /   — занятия для учащихся 7-8 классов.

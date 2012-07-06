@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  Контактная информация
+title:  Контакты
 
 class:  contacts-page
 ---
@@ -9,27 +9,27 @@ class:  contacts-page
   %article.page-article.clearfix
     %hgroup>
       %h1.page-title>
-        Контактная информация
+        Контакты
     .contacts-box
       %ul.contacts-list
+        %li.phone
+          %span.icon-mobile-alt
+          %i
+            +7 (909) 535-00-73
         %li.email
           %span.icon-mail-1
           %a{:href => 'mailto:aloha@7bits.it'}
             %i
               aloha@7bits.it
-        %li.phone
-          %span.icon-mobile-alt
-          %i
-            +7 (909) 535-00-73
         %li.skype
           %span.icon-skype
           %a{:href => 'skype:anna_tarasenko?chat'}
             %i
-              Anna Tarasenko
+              anna_tarasenko
         %li.address
           %span.icon-flag
           %i
-            Россия, г. Омск, 644010, ул. Учебная 83а, офис 212.
+            Омск, Учебная 83<sup>а</sup>, офис 212
       .map
         #ymaps-map-id_133999665283018323121.map-box
     .contact-form-box

@@ -13,8 +13,11 @@ nav:
   - name:   Портфолио
     url:    portfolio.html
 
-  - name:   Друзьям и учащимся
-    url:    for-friends.html
+  - name:   Мероприятия
+    url:    events.html
 
-  - name:   Связаться с нами
-    url:    contact-us.html
+  - name:   Обучение
+    url:    students.html
+
+  - name:   Контакты
+    url:    contacts.html
