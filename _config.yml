@@ -11,13 +11,13 @@ exclude:
 
 nav:
   - name:   Портфолио
-    url:    portfolio.html
+    url:    /portfolio.html
 
   - name:   Мероприятия
-    url:    events.html
+    url:    /events.html
 
   - name:   Обучение
-    url:    students.html
+    url:    /students.html
 
   - name:   Контакты
-    url:    contacts.html
+    url:    /contacts.html
