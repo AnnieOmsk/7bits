@@ -23,6 +23,7 @@
     li
       margin: 0 0 30px
       time
+        position: relative
         width: 57px
         height: 50px
         float: left
@@ -30,16 +31,24 @@
         background: url(../images/date-bg.png) no-repeat
         text-align: center
         i.date
+          position: absolute
+          left: 0
+          top: 2px
+          width: 100%
           display: block
           color: #103556
           font-style: normal
-          line-height: 35px
+          line-height: 31px
           font-size: 31px
         b.month
+          position: absolute
+          left: 0
+          bottom: 3px
+          width: 100%
           display: block
           color: #fff
           font-weight: normal
-          line-height: 13px
+          line-height: 12px
           font-size: 12px
 
       .event-desc
