@@ -32,23 +32,29 @@
         -webkit-border-radius: 5px
         border-radius: 5px
         border: 1px solid #ccc
+        font-family: arial
         i.date
           display: block
           color: #103556
           font-style: normal
           font-size: 31px
-          font-family: Arial
           line-height: 1.3em
         b.month
           width: 100%
           display: block
           color: #fff
           font-weight: normal
-          font-size: 12px
+          font-size: 11px
           background: green
           -moz-border-radius: 0 0 4px 4px
           -webkit-border-radius: 0 0 4px 4px
           border-radius: 0 0 4px 4px
+          line-height: 1.3em
+        &.past
+          i.date
+            color: #ccc
+          b.month
+            background: #ccc
 
       .event-desc
         float: right
