@@ -9,15 +9,15 @@
   .events
     float: right
     width: 350px
-    h1
-      a
-        font-weight: normal
-        color: #598f21
-        font-size: 24px
-        &:hover
-          color: #7ac729
+    .events-title
+      font-weight: normal
+      color: #598f21
+      font-size: 24px
+    a.events-title
+      &:hover
+        color: #7ac729
   .events-list
-    margin: 86px 0 0 0 
+    margin: 15px 0 0 0
     padding: 0
     list-style: none
     li
@@ -60,6 +60,8 @@
         float: right
         width: 275px
         line-height: 20px
+        p
+          margin: 0
         a
           color: #1f1f1f
           font-size: 16px

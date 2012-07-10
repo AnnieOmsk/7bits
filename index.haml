@@ -13,7 +13,7 @@ class:        main-page
 
   .about-article
     %article.max-width.clearfix
-      .left-column#about-company
+      .middle-block.left#about-company
         :markdown
           ##Чем занимаемся
           Разрабатываем сложные веб-приложения на *Java*, *Grails* и *Ruby on Rails*. 
@@ -32,7 +32,7 @@ class:        main-page
         /     *HAML/SASS*, *Django* <br/>
 
 
-      .right-column
+      .middle-block.right
         %br      
         %img{:src => 'assets/images/main-bg.png'}
         
@@ -61,7 +61,7 @@ class:        main-page
 
   .main-sub-article
     .main-sub-article-c.max-width.clearfix
-      %article.left-column
+      %article.middle-block.left
         :markdown
           ##Приглашаем на работу
           На самом деле нет. К нам чертовски сложно попасть. У нас высокие требования к людям.<br/>
@@ -69,7 +69,7 @@ class:        main-page
 
           [Хотите попробовать?](mailto:aloha@7bits.it)
 
-      %article.right-column
+      %article.middle-block.right
         :markdown
           ##Оплачиваем стажировку
           Если у вас нет опыта, но есть базовые знания, горящие глаза и готовность пахать, чтобы оперативно обзавестись необходимыми навыками, мы возьмем вас на оплачиваемую двухмесячную стажировку.
@@ -77,7 +77,7 @@ class:        main-page
         / [Хотите попробовать?](jobs.html)
 
     .main-sub-article-c.max-width.clearfix
-      %article.contacts
+      %article.contacts.small-block.left
         %h2
           %a{:href => 'contacts.html'} Контакты
         %ul.contacts-list
@@ -92,7 +92,7 @@ class:        main-page
             %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
 
 
-      %article.friends-article
+      %article.friends-article.large-block.right
 
         :markdown
           ## [Проводим мероприятия](events.html)
