@@ -5,11 +5,16 @@ title:  Контакты
 class:  contacts-page
 ---
 
+
+%script{:src => "http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_133999665283018323121"}
+%script{:src => "/assets/js/yandex-map.js"}
+
 .max-width
   %article.page-article.clearfix
     %hgroup>
       %h1.page-title>
         Контакты
+
     .contacts-box
       %ul.contacts-list
         %li.phone
@@ -32,26 +37,24 @@ class:  contacts-page
             Омск, Учебная 83, офис 212
       .map
         #ymaps-map-id_133999665283018323121.map-box
-    .contact-form-box
-      .contact-form-wrap
-        %h2
-          Есть вопрос?
-        %form.contacts-form{:action => '#'}
-          %label
-            %span
-              Ваш e-mail:
-            %input{:type => 'email'}
-          %label
-            %span
-              Как к Вам обращаться?
-            %input{:type => 'text'}
-          %label
-            %span
-              Ваш вопрос:
-            %textarea
-          %p.submit-button
-            %input{:type => 'submit', :value => 'Отправить'}
 
+    / .contact-form-box
+    /   .contact-form-wrap
+    /     / %h2
+    /     /   Есть вопрос?
+    /     / %form.contacts-form{:action => '#'}
+    /     /   %label
+    /     /     %span
+    /     /       Ваш e-mail:
+    /     /     %input{:type => 'email'}
+    /     /   %label
+    /     /     %span
+    /     /       Как к Вам обращаться?
+    /     /     %input{:type => 'text'}
+    /     /   %label
+    /     /     %span
+    /     /       Ваш вопрос:
+    /     /     %textarea
+    /     /   %p.submit-button
+    /     /     %input{:type => 'submit', :value => 'Отправить'}
 
-%script{:src => "http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_133999665283018323121"}
-%script{:src => "/assets/js/yandex-map.js"}

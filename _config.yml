@@ -10,8 +10,8 @@ exclude:
 #jammit_output_dir: assets
 
 nav:
-  - name:   Портфолио
-    url:    /portfolio.html
+  # - name:   Портфолио
+  #   url:    /portfolio.html
 
   - name:   Мероприятия
     url:    /events.html
