@@ -25,35 +25,30 @@
       time
         position: relative
         width: 57px
-        height: 50px
         float: left
         margin: 0 15px 0 0
-        background: url(../images/date-bg.png) no-repeat
         text-align: center
+        -moz-border-radius: 5px
+        -webkit-border-radius: 5px
+        border-radius: 5px
+        border: 1px solid #ccc
         i.date
-          position: absolute
-          left: 0
-          top: 2px
-          width: 100%
           display: block
           color: #103556
           font-style: normal
-          line-height: 31px
           font-size: 31px
-        &:last-child:not(:root:root) i.date
-          top: 5px
+          font-family: Arial
+          line-height: 1.3em
         b.month
-          position: absolute
-          left: 0
-          bottom: 3px
           width: 100%
           display: block
           color: #fff
           font-weight: normal
-          line-height: 12px
           font-size: 12px
-        &:last-child:not(:root:root) b.month
-          bottom: 2px
+          background: green
+          -moz-border-radius: 0 0 4px 4px
+          -webkit-border-radius: 0 0 4px 4px
+          border-radius: 0 0 4px 4px
 
       .event-desc
         float: right
