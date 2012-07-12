@@ -13,11 +13,14 @@ nav:
   # - name:   Портфолио
   #   url:    /portfolio.html
 
-  - name:   Мероприятия
-    url:    /events.html
-
   - name:   Обучение
     url:    /students.html
 
+  - name:   Мероприятия
+    url:    /events.html
+
   - name:   Контакты
     url:    /contacts.html
+
+markdown: kramdown
+# auto: true
