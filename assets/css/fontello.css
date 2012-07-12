@@ -1,39 +1,54 @@
-@charset "UTF-8";
-
 @font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot");
-  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'fontello';
+    src: url("../font/fontello.eot");
+    src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+    /* fix buttons height */
+    line-height: 1em;
+    /* you can be more comfortable with increased icons size */
+    /* font-zize: 120%; */
+}
+
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: 'fontello';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  opacity: 0.7;
-/* Uncomment for 3D effect */
-/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-/* fix buttons height */
-  line-height: 1em;
-/* you can be more comfortable with increased icons size */
-/* font-zize: 120%; */
+    font-family: 'fontello';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: 0.2em;
+    text-align: center;
+    opacity: 0.7;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    /* fix buttons height */
+    line-height: 1em;
+    /* you can be more comfortable with increased icons size */
+    /* font-zize: 120%; */
 }
 
-.icon-home:before { content: '\2302'; } /* '⌂' */
 .icon-flag:before { content: '\2691'; } /* '⚑' */
 .icon-mail-1:before { content: '\e801'; } /* '' */
-.icon-location:before { content: '\e724'; } /* '' */
 .icon-mobile-alt:before { content: '\e7b0'; } /* '' */
-.icon-facebook-rect:before { content: '\f301'; } /* '' */
 .icon-skype:before { content: '\f30b'; } /* '' */
-.icon-tumblr-rect:before { content: '\f310'; } /* '' */
-.icon-linkedin-rect:before { content: '\f312'; } /* '' */
-.icon-calendar:before { content: '📅'; } /* '\1f4c5' */
+
+.icon-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2302;&nbsp;'); }
+.icon-flag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2691;&nbsp;'); }
+.icon-mail-1 { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe801;&nbsp;'); }
+.icon-location { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe724;&nbsp;'); }
+.icon-mobile-alt { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe7b0;&nbsp;'); }
+.icon-facebook-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf301;&nbsp;'); }
+.icon-skype { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf30b;&nbsp;'); }
+.icon-tumblr-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf310;&nbsp;'); }
+.icon-linkedin-rect { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf312;&nbsp;'); }
+.icon-calendar { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x1f4c5;&nbsp;'); }

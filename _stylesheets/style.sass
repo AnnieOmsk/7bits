@@ -113,13 +113,13 @@ footer
       float: left
       .sns-btns
         a, b
-          display: inline-block
-          vertical-align: middle
+          float: left
         b
           color: #999
           font-weight: normal
           font-size: 14px
         a
+          margin: 0 0 0 5px
           overflow: hidden
           width: 25px
           height: 25px
@@ -137,6 +137,8 @@ footer
             background-position: 0 -235px
             &:hover
               background-position: -25px -235px
+          &:first-child
+            margin: 0
     .right-panel
       float: right
       text-align: right
@@ -144,7 +146,8 @@ footer
         margin-top: 4px
         color: #999
         font-size: 14px
-
+.ie7 footer .footer
+  padding: 15px 0
 .footer-page footer
   background-color: #f1f1f1
   *background-color: #f1f1f1
