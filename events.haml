@@ -26,19 +26,6 @@ class:  page
         Календарь IT-событий
       %ul.events-list
         %li.clearfix
-          %time{:datetime => '2012-07-28'}
-            %i.date
-              28
-            %b.month
-              июля
-          .event-desc
-            :markdown
-              Летний [CodeFest mini](http://codefest.ru) в Новосибирске
-            %dl.event-author
-              %dt
-                На конференцию едут четыре человека от 7bits
-              %dd
-        %li.clearfix
           %time{:datetime => '2012-07-13'}
             %i.date
               13
@@ -52,6 +39,47 @@ class:  page
                 докладчик:
               %dd
                 Александр Яткевич
+        %li.clearfix
+          %time{:datetime => '2012-07-28'}
+            %i.date
+              28
+            %b.month
+              июля
+          .event-desc
+            :markdown
+              Летний [CodeFest mini](http://codefest.ru) в Новосибирске
+            %dl.event-author
+              %dt
+                На конференцию едут четыре человека от 7bits
+
+        %hr
+
+        %li.clearfix
+          %time.past{:datetime => '2012-06-22'}
+            %i.date
+              22
+            %b.month
+              июня
+          .event-desc
+            :markdown
+              Первая встреча [омского MongoDB User Group](http://vk.com/mongodbomsk)
+            %dl.event-author
+              %dt
+                :markdown
+                  [Видео](http://www.youtube.com/playlist?list=PL91BE55657AF8F164) и [презентации](https://docs.google.com/folder/d/0B_uuGoU4GQTkTDJQSmp0YTNVM0E/edit) со встречи
+
+        %li.clearfix{:datetime => '2012-06-27'}
+          %time.past
+            %i.date
+              27
+            %b.month
+              июня
+          .event-desc
+            :markdown
+              Совместный просмотр прямой трянсляции Google I/O 2012
+            
+
+
       %p
         Подписаться:
         %b.icon-calendar
