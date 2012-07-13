@@ -26,20 +26,6 @@ class:  page
         Календарь IT-событий
       %ul.events-list
         %li.clearfix
-          %time{:datetime => '2012-07-13'}
-            %i.date
-              13
-            %b.month
-              июля
-          .event-desc
-            :markdown
-              Встреча [Omsk JS User Group](http://omsk-js.ru). Доклад &laquo;JavaScript: от&nbsp;простого к&nbsp;сложному&raquo;.
-            %dl.event-author
-              %dt
-                докладчик:
-              %dd
-                Александр Яткевич
-        %li.clearfix
           %time{:datetime => '2012-07-28'}
             %i.date
               28
@@ -54,6 +40,22 @@ class:  page
               %dd
         %li
           %hr
+
+        %li.clearfix
+          %time.past{:datetime => '2012-07-13'}
+            %i.date
+              13
+            %b.month
+              июля
+          .event-desc
+            :markdown
+              Встреча [Omsk JS User Group](http://omsk-js.ru). Доклад &laquo;JavaScript: от&nbsp;простого к&nbsp;сложному&raquo;.
+            %dl.event-author
+              %dt
+                докладчик:
+              %dd
+                Александр Яткевич
+
         %li.clearfix
           %time.past{:datetime => '2012-06-22'}
             %i.date
