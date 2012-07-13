@@ -8,7 +8,6 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-    font-family: 'fontello';
     font-style: normal;
     font-weight: normal;
     /* fix buttons height */
@@ -37,10 +36,16 @@
     /* font-zize: 120%; */
 }
 
+.icon-home:before { content: '\2302'; } /* '⌂' */
 .icon-flag:before { content: '\2691'; } /* '⚑' */
 .icon-mail-1:before { content: '\e801'; } /* '' */
+.icon-location:before { content: '\e724'; } /* '' */
 .icon-mobile-alt:before { content: '\e7b0'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
 .icon-skype:before { content: '\f30b'; } /* '' */
+.icon-tumblr-rect:before { content: '\f310'; } /* '' */
+.icon-linkedin-rect:before { content: '\f312'; } /* '' */
+.icon-calendar:before { content: '📅'; } /* '\1f4c5' */
 
 .icon-home { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2302;&nbsp;'); }
 .icon-flag { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2691;&nbsp;'); }
