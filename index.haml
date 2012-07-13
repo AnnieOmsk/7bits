@@ -49,21 +49,7 @@ class:        main-page
   .main-sub-article-c.max-width.clearfix
     %article.contacts.middle-block.left
       %h2
-        %a{:href => 'contacts.html'} Заглянуть к нам в гости
-      %ul.contacts-list
-        %li
-          %b.icon-mobile-alt
-          +7 (909) 535-00-73
-        %li
-          %b.icon-mail-1
-          %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
-        %li
-          %b.icon-skype
-          %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
-
-    %article.contacts.middle-block.left
-      %h2
-        Место для лайков
+        Место для ваших лайков
       :plain
         <div id="fb-root"></div>
         <script>
@@ -79,3 +65,17 @@ class:        main-page
         <div class="like-button">
           <div class="fb-like" data-href="http://www.facebook.com/pages/7bits/183878491667239" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false" data-font="segoe ui"></div>
         </div>
+
+    %article.contacts.middle-block.left
+      %h2
+        %a{:href => 'contacts.html'} Контакты
+      %ul.contacts-list
+        %li
+          %b.icon-mobile-alt
+          +7 (909) 535-00-73
+        %li
+          %b.icon-mail-1
+          %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
+        %li
+          %b.icon-skype
+          %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
