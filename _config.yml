@@ -24,3 +24,5 @@ nav:
 
 markdown: kramdown
 # auto: true
+
+exclude: portfolio.html, events-archive.html, nginx-configurations
