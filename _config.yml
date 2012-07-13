@@ -23,6 +23,8 @@ nav:
     url:    /contacts.html
 
 markdown: kramdown
+#  auto_ids: false,
+#  use_coderay: false
 # auto: true
 
-exclude: portfolio.html, events-archive.html, nginx-configurations
+exclude: portfolio.haml, events-archive.haml, nginx-configurations

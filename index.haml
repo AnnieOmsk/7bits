@@ -39,25 +39,43 @@ class:        main-page
           ##Берём&nbsp;на&nbsp;стажировку
           Если у вас нет опыта, но есть базовые знания, горящие глаза и готовность пахать, чтобы оперативно обзавестись необходимыми навыками, мы возьмем вас на оплачиваемую двухмесячную стажировку.
 
-    .main-sub-article-c.max-width.clearfix
-      %article.contacts.middle-block.right
-        %h2
-          %a{:href => 'contacts.html'} Контакты
-        %ul.contacts-list
-          %li
-            %b.icon-mobile-alt
-            +7 (909) 535-00-73
-          %li
-            %b.icon-mail-1
-            %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
-          %li
-            %b.icon-skype
-            %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
-
-
-      %article.friends-article.middle-block.left
+      %article.middle-block.left
 
         :markdown
           ## [Проводим&nbsp;мероприятия](events.html)
           А также постоянно участвуем в различных IT-событиях города и страны.<br/>
           В пятницу, 13 июля в нашем офисе пройдет первая встреча [Omsk JS User Group](http://omsk-js.ru), например.
+
+  .main-sub-article-c.max-width.clearfix
+    %article.contacts.middle-block.left
+      %h2
+        %a{:href => 'contacts.html'} Заглянуть к нам в гости
+      %ul.contacts-list
+        %li
+          %b.icon-mobile-alt
+          +7 (909) 535-00-73
+        %li
+          %b.icon-mail-1
+          %a{:href => 'mailto:aloha@7bits.it'} aloha@7bits.it
+        %li
+          %b.icon-skype
+          %a{:href => 'skype:anna_tarasenko?chat'} anna_tarasenko
+
+    %article.contacts.middle-block.left
+      %h2
+        Место для лайков
+      :plain
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <div class="like-button">
+          <div class="fb-like" data-href="http://www.facebook.com/pages/7bits/183878491667239" data-send="false" data-layout="button_count" data-width="130" data-show-faces="false" data-font="segoe ui"></div>
+        </div>
