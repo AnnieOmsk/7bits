@@ -1,6 +1,10 @@
 7bits
 =====
 
+
+# устанавливаем гем
+gem install jekyll
+
 #генерация статики
 $ jekyll
 
