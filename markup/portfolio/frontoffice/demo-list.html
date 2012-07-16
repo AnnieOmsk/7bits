@@ -1,0 +1,193 @@
+<!doctype html>
+<!-- Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/ -->
+<!--[if IEMobile 7 ]> <html class="no-js iem7" lang="en"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!-->
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/html"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>List of cars</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="stylesheet" href="css/h5bp/begin.css">
+    <link rel="stylesheet" href="css/lib/jquery.mobile-1.1.0.min.css">
+    <link rel="stylesheet" href="css/lib/jquery.mobile.simpledialog.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jqm.css">
+    <link rel="stylesheet" href="css/h5bp/end.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/jqm-ie.css">
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-verbose loading-msg" id="loading-msg">
+    <span class="ui-icon ui-icon-loading"></span>
+    <h1>Loading</h1>
+</div>
+
+<div data-role="page" class="page">
+    <div class="toolbar-panel clearfix" data-role="header" data-position="fixed">
+        <div class="toolbar-wrapper">
+            <div class="logo-small ui-bar-a">
+                <a class="menu-link" href="#"></a>
+                <div class="menu-panel">
+                    <span class="corner"></span>
+                    <h3>John Smith</h3>
+                    <a href="#" class="nav-link-logout menu-link demo" data-role="button" data-theme="b">Logout</a>
+                    <a href="#" class="nav-link-search menu-link demo" data-role="button" data-theme="b">Search</a>
+                    <a href="#" class="wait menu-link demo" data-role="button" data-theme="b">About</a>
+                    <fieldset data-role="controlgroup" class="choose-devices demo" id="choose-ui-version">
+                        <legend>Interface version:</legend>
+
+                        <input type="radio" name="devices" id="android" data-theme="f"/>
+                        <label for="android">Android</label>
+
+                        <input type="radio" name="devices" id="ipad" data-theme="f"/>
+                        <label for="ipad">iPad</label>
+
+                        <input type="radio" name="devices" id="other" checked="checked" data-theme="f"/>
+                        <label for="other">other</label>
+
+                    </fieldset>
+                </div>
+            </div>
+            <div class="toolbar" data-role="header">
+                <h1>List of cars</h1>
+                <div class="ui-btn-left">
+                    <a href="demo-form.html" data-role="button" data-rel="back" data-icon="arrow-l" data-theme="f">Back</a>
+                    <a href="#" data-role="button" data-icon="delete" data-theme="f" class="logout demo">Logout</a>
+                </div>
+                <div class="ui-btn-right">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="content" class="content">
+        <div class="search-toolbar">
+            <div class="search-left-filter" data-role="controlgroup" data-type="horizontal">
+                <h4>Sort by</h4>
+                <fieldset data-role="controlgroup" data-type="horizontal" class="filter-group">
+                    <input type="radio" class="sort-field selected" name="sort" id="fullNameString" checked="checked" />
+                    <label for="fullNameString">Car</label>
+
+                    <input type="radio" class="sort-field" name="sort" id="inn" />
+                    <label for="inn">Model</label>
+                </fieldset>
+            </div>
+            <div class="search-right-filter" data-role="controlgroup" data-type="horizontal">
+                <a href="#" data-icon="arrow-u" data-role="button">Ascending</a>
+                <a href="#" data-icon="arrow-d" data-role="button">Descending</a>
+            </div>
+        </div>
+        <ul data-role="listview" data-split-theme="d" class="search-results-list search-results-list-control">
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Carol</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>CX7</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>CX9</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Demio</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Laputa</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Levante</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Mx-5</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="users-data">
+                        <h5>Mazda</h5>
+                        <dl>
+                            <dt>Rx-7</dt>
+                        </dl>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="js/helper.js"></script>
+
+<script src="js/lib/jquery.mobile-1.1.0.min.js"></script>
+<script src="js/libs/jquery.mobile.simpledialog2.js"></script>
+<script src="js/libs/jquery.fixedMenu.js"></script>
+<script src="js/demo-dialog.js"></script>
+<script src="js/dropdown_run.js"></script>
+<script src="js/plugins.js"></script>
+
+<script src="js/loading-msg.js"></script>
+</body>
+</html>
