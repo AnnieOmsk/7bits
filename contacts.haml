@@ -14,7 +14,8 @@ class:  contacts-page
     %hgroup>
       %h1.page-title>
         Контакты
-    .contacts-box.clearfix
+
+    .contacts-box
       %ul.contacts-list.middle-block.right
         %li.phone
           %span.icon-mobile-alt
@@ -37,3 +38,24 @@ class:  contacts-page
       .map.middle-block.left
         .map-wrap
           #ymaps-map-id_134207103620382262664.map-box
+
+    / .contact-form-box
+    /   .contact-form-wrap
+    /     / %h2
+    /     /   Есть вопрос?
+    /     / %form.contacts-form{:action => '#'}
+    /     /   %label
+    /     /     %span
+    /     /       Ваш e-mail:
+    /     /     %input{:type => 'email'}
+    /     /   %label
+    /     /     %span
+    /     /       Как к Вам обращаться?
+    /     /     %input{:type => 'text'}
+    /     /   %label
+    /     /     %span
+    /     /       Ваш вопрос:
+    /     /     %textarea
+    /     /   %p.submit-button
+    /     /     %input{:type => 'submit', :value => 'Отправить'}
+
