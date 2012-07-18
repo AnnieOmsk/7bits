@@ -2,17 +2,15 @@ permalink:    /:categories/:title/
 
 exclude:
   - README.md
-  - markup
   - 7bits.iml
   - nginx-configurations
+  - portfolio.haml
+  - events-archive.haml
 
 #jammit_base_dir: ./
 #jammit_output_dir: assets
 
 nav:
-  # - name:   Портфолио
-  #   url:    /portfolio.html
-
   - name:   Обучение
     url:    /students.html
 
@@ -26,5 +24,3 @@ markdown: kramdown
 #  auto_ids: false,
 #  use_coderay: false
 # auto: true
-
-exclude: portfolio.haml, events-archive.haml, nginx-configurations
