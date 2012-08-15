@@ -5,6 +5,9 @@ title:  Друзьям и коллегам из других компаний
 class:  page
 ---
 
+%script{:src => "/assets/js/google_calendar_api.js"}
+%script{:src => "https://apis.google.com/js/client.js?onload=OnLoadCallback"}
+
 .max-width.for-friends-page.clearfix
   %h1.page-title
     Мероприятия
@@ -24,103 +27,7 @@ class:  page
     %aside.events
       %h2.events-title
         Календарь IT-событий
-      %ul.events-list
-        %li.clearfix
-          %time{:datetime => '2012-08-10'}
-            %i.date
-              10
-            %b.month
-              августа
-          .event-desc
-            :markdown
-              Вторая встреча [Omsk JS User Group](http://omsk-js.ru). Доклад &laquo;Компания моей мечты(как я делал тестовое задание в дизайн-бюро Артема Горбунова)&raquo;. 
-            %dl.event-author
-              %dt
-                докладчик: 
-              %dd
-                Александр Омельницкий
-        %li.clearfix
-          %time{:datetime => '2012-08-12'}
-            %i.date
-              12
-            %b.month
-              августа
-          .event-desc
-            :markdown
-              [Хакатон](http://blog.gdgomsk.org/2012/08/google-web-2012-web.html) Omsk GDG
-            %dl.event-author
-              %dt
-                Образовательный семинар по HTML/CSS/JS в рамках хакатона пройдет 12 августа в 11:00
-              %dd
-                
-        %li.clearfix
-          %time{:datetime => '2012-08-24'}
-            %i.date
-              24
-            %b.month
-              августа
-          .event-desc
-            :markdown
-              [Omsk Ludum Dare 48](http://old48.com/) - интернет-соревнование по скоростной разработке компьютерных игр
-            %dl.event-author
-              %dt
-                :markdown
-                  24 - 26 августа
-              %dd
-                
-        / %li
-        /   %hr
-        / %li.clearfix
-        /   %time.past{:datetime => '2012-07-28'}
-        /     %i.date
-        /       20
-        /     %b.month
-        /       июля
-        /   .event-desc
-        /     :markdown
-        /       Неформальная [встреча фронтенд-разработчиков](http://vk.com/event40714024) 
-        /     %dl.event-author
-        /       %dt
-        /         в Бельгийском Пабе в 19:00
-        /       %dd
-
-        / %li.clearfix
-        /   %time.past{:datetime => '2012-07-13'}
-        /     %i.date
-        /       13
-        /     %b.month
-        /       июля
-        /   .event-desc
-        /     :markdown
-        /       Встреча [Omsk JS User Group](http://omsk-js.ru). Доклад &laquo;JavaScript: от&nbsp;простого к&nbsp;сложному&raquo;.
-        /     %dl.event-author
-        /       %dt
-        /         докладчик:
-        /       %dd
-        /         Александр Яткевич
-        / %li.clearfix
-        /   %time.past{:datetime => '2012-06-27'}
-        /     %i.date
-        /       27
-        /     %b.month
-        /       июня
-        /   .event-desc
-        /     :markdown
-        /       Совместный просмотр прямой трянсляции Google I/O 2012
-        /%li.clearfix
-        /  %time.past{:datetime => '2012-06-22'}
-        /    %i.date
-        /      22
-        /    %b.month
-        /      июня
-        /  .event-desc
-        /    :markdown
-        /      Первая встреча [омской MongoDB User Group](http://vk.com/mongodbomsk)
-        /    %dl.event-author
-        /      %dt
-        /        :markdown
-        /          [Видео](http://www.youtube.com/playlist?list=PL91BE55657AF8F164) и [презентации](https://docs.google.com/folder/d/0B_uuGoU4GQTkTDJQSmp0YTNVM0E/edit) со встречи
-        /      %dd
+      %ul#_events_.events-list
       %p
         
         %b.icon-calendar
