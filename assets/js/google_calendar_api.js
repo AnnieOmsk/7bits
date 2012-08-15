@@ -53,7 +53,7 @@ function appendResults(events) {
                 "</div>" + 
                 "<div class='event-desc'>" + 
                   "<div><strong><a href='"+ description.title_link +"' target='_blank'>" + item.summary + "</a></strong></div>" + 
-                  "<div>" + replaceURLWithHTMLLinks(description.main_content) + "</div>" + 
+                  "<div class='event-description'>" + replaceURLWithHTMLLinks(description.main_content) + "</div>" + 
                   "<dl class='event-author'>" + 
                     "<dt>" + "Место проведения:" + "</dt>" + 
                     "<dd>" + item.location + "</dd>" + 
