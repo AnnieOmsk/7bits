@@ -6,8 +6,8 @@
 gem install jekyll
 
 #генерация статики
-$ jekyll
+jekyll
 
 #заливка на сервер
-$ rsync -av ./_site/* root@7bits.it:/var/www/7bits/
+rsync -av ./_site/* root@7bits.it:/var/www/7bits/
 
