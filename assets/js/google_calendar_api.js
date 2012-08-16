@@ -24,8 +24,8 @@ function replaceURLWithHTMLLinks(text) {
 }
 
 function durationEvent(item) {
-  var start_date = new Date(item.start.dateTime || item.start.date);
-  var end_date = new Date(item.end.dateTime || item.end.date);
+  var start_date = Date.create(item.start.dateTime || item.start.date);
+  var end_date = Date.create(item.end.dateTime || item.end.date);
   var content;
 
   if (start_date.toDateString() == end_date.toDateString()) {
@@ -41,7 +41,7 @@ function durationEvent(item) {
 
 function appendResults(events) {
   $.each(events.items, function(i, item){
-    var event_time = new Date(item.start.dateTime || item.start.date);
+    var event_time = Date.create(item.start.dateTime || item.start.date);
     var description = removeUrlFromStartLine(item.description);
 
     content = "<li class='clearfix'>" + 
@@ -66,7 +66,7 @@ function appendResults(events) {
 }
 
 function getEvents() {
-  var now = new Date();
+  var now = Date.create();
   var time = now.toISOString();
   var request = gapi.client.calendar.events.list({'calendarId': "aqclsibjm591jbbk875uio9k40@group.calendar.google.com", 'timeMin': time, 'singleEvents': 'True', 'orderBy': 'startTime', 'maxResults': '4'});
   request.execute(function(resp){ appendResults(resp)} );
