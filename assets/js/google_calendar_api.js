@@ -39,6 +39,13 @@ function durationEvent(item) {
   return content;
 }
 
+function formattingTitle(summary, link) {
+  var content;
+  if (link && link.length) { content = "<a href='"+ link +"' target='_blank'>" + summary + "</a>"; }
+  else { content = summary; }
+  return content;
+}
+
 function appendResults(events) {
   $.each(events.items, function(i, item){
     var event_time = Date.create(item.start.dateTime || item.start.date);
@@ -52,7 +59,7 @@ function appendResults(events) {
                   "</time>" + 
                 "</div>" + 
                 "<div class='event-desc'>" + 
-                  "<div><strong><a href='"+ description.title_link +"' target='_blank'>" + item.summary + "</a></strong></div>" + 
+                  "<div><strong>" + formattingTitle(item.summary, description.title_link) + "</strong></div>" + 
                   "<div class='event-description'>" + replaceURLWithHTMLLinks(description.main_content) + "</div>" + 
                   "<dl class='event-author'>" + 
                     "<dt>" + "Место проведения:" + "</dt>" + 
