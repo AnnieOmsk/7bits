@@ -13,9 +13,13 @@ function dayAndMonth(date) {
 }
 
 function removeUrlFromStartLine(text) {
-  var exp = /^(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-  var link = text.match(exp);
-  return {'title_link' : link, 'main_content' : text.replace(exp,'')};
+  var result = {'title_link' : '', 'main_content' : ''};
+  if (text) {
+    var exp = /^(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    var link = text.match(exp);
+    result = {'title_link' : link, 'main_content' : text.replace(exp,'')};
+  }
+  return result;
 }
 
 function replaceURLWithHTMLLinks(text) {
@@ -39,6 +43,27 @@ function durationEvent(item) {
   return content;
 }
 
+function eventLocation(item) {
+  var result = '';
+  if (item.location) {
+    result = "<dt>" + "Место проведения:" + "</dt>" + 
+    "<dd>" + item.location + "</dd>"
+  }
+  return result;
+}
+
+function eventDescription(item) {
+    var description = removeUrlFromStartLine(item.description);
+    var result = '';
+    if (description.title_link.length > 0) {
+      result = "<div><strong><a href='"+ description.title_link +"' target='_blank'>" + item.summary + "</a></strong></div>"
+    } else {
+      result = "<div><strong>" + item.summary + "</strong></div>"
+    }
+    result += "<div class='event-description'>" + replaceURLWithHTMLLinks(description.main_content) + "</div>"
+    return result;
+}
+
 function appendResults(events) {
   $.each(events.items, function(i, item){
     var event_time = Date.create(item.start.dateTime || item.start.date);
@@ -52,11 +77,9 @@ function appendResults(events) {
                   "</time>" + 
                 "</div>" + 
                 "<div class='event-desc'>" + 
-                  "<div><strong><a href='"+ description.title_link +"' target='_blank'>" + item.summary + "</a></strong></div>" + 
-                  "<div class='event-description'>" + replaceURLWithHTMLLinks(description.main_content) + "</div>" + 
+                  eventDescription(item) +
                   "<dl class='event-author'>" + 
-                    "<dt>" + "Место проведения:" + "</dt>" + 
-                    "<dd>" + item.location + "</dd>" + 
+                    eventLocation(item) +
                   "</dl>" + 
                   durationEvent(item) + 
                 "</div>" + 
